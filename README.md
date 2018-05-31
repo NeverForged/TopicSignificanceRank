@@ -6,8 +6,10 @@ In order to determine the number of topics to use when applying LDA to a matrix 
 - Opened up a git repo and started a Jupyter Notebook
 - Hit Section 3 of [the paper](https://mimno.infosci.cornell.edu/info6150/readings/ECML09_AlSumaitetal.pdf) and added distributions.
 - Section 4 led to the U, V, and B variables, as well as S1, S2, S, and Psi.
+- Having no real method for determining Psi's in the paper, I computed the psi in S as '1' and the overall psi as the normalized Psi from the text.
 
 ### Testing the Code
 - First, looking if it works (word frequency is not the best thing to look at, which makes sense)
 - Comparison of TSR as a function of max_iter -> should get better as we add more iterations, so should show a difference as we get better.
+- Comparison of TSR as a function of n_components -> Should be the same (or have local maxima/minima)
 - create artifical good and bad models and check results.
